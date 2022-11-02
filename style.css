@@ -1,0 +1,129 @@
+body{font-family: 'Space Mono', monospace;
+  background-color: #ACBFA4;
+  color: #E2E8CE;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  cursor: url('./images/turtle.png'),auto;
+}
+.title {font-family: 'Space Grotesk', sans-serif;
+  color: #2E3532
+
+}
+li {
+  display: inline;
+}
+ul{
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: #6C0E23;
+    font-size: 20px;
+  font-weight: bold;
+  transition: 0.3 ease;
+}
+a:hover{
+  color: #df2525;
+}
+#profile-pic{
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+  object-fit: cover;
+}
+.card{
+  background-color: #696D7D;
+    padding: 15px;
+    width: 350px;
+    margin: 25px auto;
+  border-radius: 30px;
+  border: 1px solid #EAEAEA;
+}
+.pictur_turlte{
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+
+}
+#turtle1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: play1 10s steps(100) infinite;
+}
+#turtle2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: play2 10s steps(100) infinite;
+}
+#turtle3{
+  position: absolute;
+  top: 0;
+  left: 120px;
+  animation: play3 10s steps(100) infinite;
+}
+#turtle4{
+  position: absolute;
+  top: 0;
+  right: 120px;
+  animation: play4 10s steps(100) infinite;
+}
+#turtle5{
+  position: absolute;
+  top: 0;
+  left: 250px;
+  animation: play5 10s steps(100) infinite;
+}
+#turtle6{
+  position: absolute;
+  top: 0;
+  right: 250px;
+  animation: play6 10s steps(100) infinite;
+}
+@keyframes play1 {
+  from{top: 0px;}
+  to{top: 150vh;}
+}
+@keyframes play2 {
+  from{top: -200px;}
+  to{top: 150vh;}
+}
+@keyframes play3 {
+  from{top: -200px;}
+  to{top: 150vh;}
+}
+@keyframes play4 {
+  from{top: 0px;}
+  to{top: 150vh;}
+}
+@keyframes play5 {
+  from{top: -100px;}
+  to{top: 150vh;}
+}
+@keyframes play6 {
+  from{top: -100px;}
+  to{top: 150vh;}
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
